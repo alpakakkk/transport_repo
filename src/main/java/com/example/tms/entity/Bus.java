@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.example.tms.entity;
 
 import jakarta.persistence.*;
@@ -27,4 +28,9 @@ public class Bus {
     public void setId(Long id) { this.id = id; }
     public void setNumberPlate(String numberPlate) { this.numberPlate = numberPlate; }
     public void setCapacity(int capacity) { this.capacity = capacity; }
+=======
+package com.example.transport.entity;
+
+public class Bus {
+>>>>>>> edf3098242461726d6e47f864ae7dc1a0d1bba05
 }

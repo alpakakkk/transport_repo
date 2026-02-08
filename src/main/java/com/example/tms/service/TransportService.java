@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.example.tms.service;
 
 import com.example.tms.entity.Bus;
@@ -70,4 +71,9 @@ public class TransportService {
     public void deletePassenger(Long id) {
         passengerRepository.deleteById(id);
     }
+=======
+package com.example.transport.service;
+
+public class TransportService {
+>>>>>>> edf3098242461726d6e47f864ae7dc1a0d1bba05
 }

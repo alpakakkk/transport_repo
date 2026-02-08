@@ -1,0 +1,67 @@
+GET http://localhost:8080/api/passengers
+Accept: application/json
+
+###
+POST http://localhost:8080/api/buses
+Content-Type: application/json
+
+{
+  "numberPlate": "KZ222BBB",
+  "capacity": 45
+}
+
+###
+POST http://localhost:8080/api/buses
+Content-Type: application/json
+
+{
+  "numberPlate": "KZ111AAA",
+  "capacity": 30
+}
+
+###
+POST http://localhost:8080/api/passengers
+Content-Type: application/json
+
+{
+  "fullName": "Ilyas T",
+  "busId": 3
+}
+
+###
+POST http://localhost:8080/api/passengers
+Content-Type: application/json
+
+{
+  "fullName": "Almanzor Kamzeyev",
+  "busId": 2
+}
+
+###
+POST http://localhost:8080/api/passengers
+Content-Type: application/json
+
+{
+  "fullName": "Daniyar Sadu",
+  "busId": 1
+}
+
+###
+POST http://localhost:8080/passengers
+Content-Type: application/json
+
+{
+  "fullName": "Aruzhan Nur",
+  "busId": 1
+}
+
+###
+POST http://localhost:8080/api/buses
+Content-Type: application/json
+
+{
+  "numberPlate": "KZ123ABC",
+  "capacity": 40
+}
+
+

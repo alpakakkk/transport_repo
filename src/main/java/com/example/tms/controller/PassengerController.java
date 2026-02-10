@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.example.tms.controller;
 
 import com.example.tms.entity.Passenger;
@@ -43,9 +42,4 @@ public class PassengerController {
         service.deletePassenger(id);
         return "Passenger deleted: " + id;
     }
-=======
-package com.example.transport.controller;
-
-public class PassengerController {
->>>>>>> edf3098242461726d6e47f864ae7dc1a0d1bba05
 }

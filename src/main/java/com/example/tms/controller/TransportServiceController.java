@@ -1,6 +1,6 @@
 package com.example.tms.controller;
 
-import com.example.tms.service.TransportServiceService;
+import com.example.tms.service.TransportServiceManager;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,32 +11,32 @@ import java.util.List;
 @RequestMapping("/api/services")
 public class TransportServiceController {
 
-    private final TransportServiceService transportServiceService;
+    private final TransportServiceManager transportServiceManager;
 
-    public TransportServiceController(TransportServiceService transportServiceService) {
-        this.transportServiceService = transportServiceService;
+    public TransportServiceController(TransportServiceManager transportServiceManager) {
+        this.transportServiceManager = transportServiceManager;
     }
 
     @GetMapping
     public List<TransportServiceResponse> list() {
-        return transportServiceService.getAll();
+        return transportServiceManager.getAll();
     }
 
     @GetMapping("/{id}")
     public TransportServiceResponse get(@PathVariable Long id) {
-        return transportServiceService.getById(id);
+        return transportServiceManager.getById(id);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public TransportServiceResponse create(@RequestBody TransportServiceRequest req) {
-        return transportServiceService.create(req);
+        return transportServiceManager.create(req);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable Long id) {
-        transportServiceService.delete(id);
+        transportServiceManager.delete(id);
     }
 
     // DTOs (чтобы не создавать отдельный пакет)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.example.tms.controller;
 
 import com.example.tms.entity.Bus;
@@ -36,18 +35,5 @@ public class BusController {
     public String delete(@PathVariable Long id) {
         service.deleteBus(id);
         return "Bus deleted: " + id;
-=======
-package com.example.transport.controller;
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-public class BusController {
-
-    @GetMapping("/index")
-    public String printMessage(){
-        return "hello";
->>>>>>> edf3098242461726d6e47f864ae7dc1a0d1bba05
     }
 }

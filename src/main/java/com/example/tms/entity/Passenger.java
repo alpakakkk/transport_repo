@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.example.tms.entity;
 
 import jakarta.persistence.*;
@@ -13,7 +12,6 @@ public class Passenger {
 
     private String fullName;
 
-    // Многие пассажиры могут быть привязаны к одному автобусу (1:N)
     @ManyToOne
     @JoinColumn(name = "bus_id")
     private Bus bus;
@@ -32,9 +30,4 @@ public class Passenger {
     public void setId(Long id) { this.id = id; }
     public void setFullName(String fullName) { this.fullName = fullName; }
     public void setBus(Bus bus) { this.bus = bus; }
-=======
-package com.example.transport.entity;
-
-public class Passenger {
->>>>>>> edf3098242461726d6e47f864ae7dc1a0d1bba05
 }
